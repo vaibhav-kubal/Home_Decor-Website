@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        
+        header{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.0)),url(2ndroom.jpg);
+        height: 100vh;
+            background-size:cover;
+            background-position: center;
+    }
+    table{
+        color: rgb(1, 1, 1);
+        /* padding: 20px; */
+        /* border-color: rgba(255, 255, 255, 0.618); */
+        /* border: 5px 5px rgb(255, 255, 255); */
+        /* position: absolute;
+        top: 50%; */
+        transform: translateY(10%);
+        position: relative;
+        left: 22%;
+        background-color: rgba(255, 255, 255, 0.674);
+        border-radius: 20px;
+        }
+
+        input{
+        height: 22px;
+        border-radius: 5px;
+        border: 1px;
+    }
+
+    .HEAD{
+        color: aliceblue;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 25px;
+    }
+       
+    button{
+        color: black;
+        width: 80px;
+        height: 35px;
+        background-color: white;
+        border-radius: 5px;
+        border-color: aliceblue;
+        padding: 3px;
+    }
+    
+    button:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgb(49, 174, 29);
+        transition: 0.4s;
+    }
+
+    .body{
+        color: azure;
+        position:absolute;
+        left: 150px;
+        top: 250px;
+        text-align: justify;
+    }
+
+    .body h1{
+        word-spacing: 5px;
+        font-size: 50px;
+    }
+
+    .body h2{
+        font-size: 50px;
+        color: rgb(247, 212, 87);
+    }
+
+    .body p{
+        font-size: 20px;
+    }
+
+    .top h2 a{
+        position: absolute;
+        right: 70px;
+        top: 12px;
+        font-size: 14px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: rgb(199, 103, 103);
+        width: 130px;
+        text-align: center;
+        padding: 6px;
+        color: azure;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+    .top{
+        background-color: rgb(241, 220, 199);
+        height: 50px;
+        position:sticky;
+        bottom: 0px;
+    }
+    .top img{
+        padding: 0px;
+        height: 85px;
+        padding-left: 25px;
+        width: auto;
+        margin-top: -15px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="cascadelogo2.png" alt="">
+        <h2><a href="#"> GET FREE QUOTE</a></h2>
+        <h2></h2>
+    </div>
+    <header>
+        <DIV class="HEAD"> CASCADE iNTERIORS</DIV>
+    <div class="table">
+    <center><table border="0px" cellpadding="10px" cellspacing="10px">
+        <tr><th><h3>CREATE A NEW ACCOUNT</h3> <br><h5>DESIGN YOUR HOME WITH US</h5></th></tr>
+        <td><form action="afterlogin.html">
+            <label for="Name"></label>
+            <center><input type="text" placeholder="First name" required> <input type="text" placeholder="Last name"></center>
+            
+            <br>
+            <label for="phone"></label>
+            <center><input type="tel" placeholder="Phone number"></center>
+            <br>
+            <label for="password"></label>
+            <center><input type="password" placeholder="Password" required></center>   <br>  
+            <center><input type="password" placeholder="Retype Password"></center>
+            <br>
+            <!-- <label for="age"></label>
+            <center><input type="number" placeholder="age"></center> <br> 
+            <center><label for="dob">DOB</label>
+            <input type="date"></center> -->
+
+            <label for="property"></label>
+            <center><input type="text" placeholder="Property Name"></center>
+            <br><br>
+            <center> Gender: 
+            <label for="gender">Male</label>
+            <input type="radio" name="Gender"> 
+            <label for="gender">Female</label>
+            <input type="radio" name="Gender">
+            <label for="gender">Other</label>
+            <input type="radio" name="Gender"></center>
+            <br>  
+        </div>
+
+        <div>
+            <center><button>Sign up</button></center>
+        </div><br>
+        <center>
+            <label for="submit"> By submitting this form, you agree to the <br> 
+            privacy policy & terms and conditions </label>
+        </center>
+        </header></table>
+
+        <div class="body">
+            <h1>Bring home beautiful <br> interiors that fits <br> <h2>your budget</h2></h1><br>
+            <p>Experience unmatched quality with Cascade iNTERIOR</p>
+        </div>
+    </header>
+    
+    
+    <br>
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designs</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header{
+            background-image:linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0)), url(last.png);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+        .nav ul{
+            float: right;
+            list-style-type: none;
+            
+        }
+
+        .nav ul li{
+            display: inline-block;
+            margin-top: 35px;
+            margin-right: 3px;
+        }
+
+        .nav ul li a{
+            text-decoration: none;
+            padding: 2px 5px;
+            color: white;
+            border: 0.5px solid transparent;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .nav ul li a:hover{
+            color: rgb(169, 219, 250);
+        }
+
+
+        .nav ul li a::after{
+           content: '';
+           height: 2.5px;
+           width: 0;
+           background-color: rgb(169, 219, 250);
+           position: absolute;
+           left: 0px;
+           bottom: -10px;
+           transition: 0.4s;
+        }
+
+    .nav ul li a:hover::after{
+        width:100%;
+    }
+      
+
+        .logo img{
+            width: 280px;
+            height: auto;
+            float: left;
+            border-radius: 10px;
+            margin-left: 35px;
+            margin-top: 0px;
+        }
+
+        .nav{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .content{
+            color: white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            width: 100%;
+            
+        }
+
+        .content ul li{
+            list-style-type: none;
+            display: inline-block;
+            margin-top: 30px;
+             
+        }
+
+        .content ul li a{
+            border: 1px solid rgb(180, 226, 255);
+            border-radius: 25px;
+            color: rgb(6, 55, 104);
+            padding: 10px 50px;
+            text-decoration: none;
+            text-align: center;
+            margin: 10px ;
+            background-color: rgb(180, 226, 255);
+            
+        }
+
+        .content ul li a:hover{
+            background-color:rgb(13, 102, 157) ;
+            color: rgb(255, 255, 255);
+            transition: 0.4s ease-in-out;
+            border-color: rgb(13, 102, 157);
+        }
+
+        .inter{
+            height: 320px;
+            background-color: rgb(255, 255, 255);
+        }
+        .inter img{
+            padding: 0px;
+            padding-top: 80px;
+            padding-inline: 80px;
+        }
+        .inter p{
+            display: inline;
+            padding-inline: 75px;
+            
+        }
+
+        .second p{
+            color:rgb(255, 255, 255);
+           text-align: center;
+           padding: 50px;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+        .second img{
+            padding: 0px;
+            padding-top: 80px;
+            padding-inline: 150px;
+            border-radius: 50px;
+        }
+        .second p{
+            display: inline;
+            padding-inline: 40px;
+        }
+        .second h1{
+            padding-top: 40px;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+        }
+
+        .second{
+            height: 400px;
+            /* background-color: rgba(28, 95, 150, 0.597); */
+            background-image:linear-gradient(rgba(0, 0, 0, 0.504),rgba(0, 0, 0, 0.225)), url(back.jpg);
+        }
+
+
+        .second h6{
+            color:rgb(255, 255, 255) ;
+            display: inline;
+            padding-inline: 78px;
+            margin-left:100px ;
+            font-size: 15px;
+        }
+            
+        
+
+        .third{
+            height: 250px;
+            background-color: rgba(234, 228, 45, 0.651);
+            color: rgb(79, 30, 44);
+            text-align: center;
+            width: 100%;
+            padding-top: 80px;
+        }
+        .third ul li a{
+            border: 2px solid rgb(183, 39, 78);
+            background-color: rgb(183, 39, 78);
+            border-radius: 25px;
+            color: rgb(255, 255, 255);
+            padding: 10px 50px;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            top: 40px;
+        }
+
+        .third p{
+            position: relative;
+            top: 10px;
+        }
+
+        .third ul li a:hover{
+            background-color:rgb(111, 22, 68) ;
+            color: rgb(255, 255, 255);
+            transition: 0.4s ease-in-out;
+            border-color: rgb(111, 22, 68);
+        }
+        .fourth{
+            padding-top: 70px;
+            background-color: rgba(164, 244, 244, 0.595);
+            height: 580px;
+        }
+
+        .fourth img{
+            width: 300px;
+            height: 350px;
+            padding: 30px;
+            border-radius: 45px;
+        }
+
+        .fourth img:hover{
+            transform: scale(1.1);
+        }
+
+        .fourth p{
+            display: inline;
+            padding-inline: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+
+        }
+
+        .sixth{
+            /* background-color: rgba(221, 217, 222, 0.627); */
+            background-image:linear-gradient(rgba(0, 0, 0, 0.821),rgba(0, 0, 0, 0.349)) ,url(v.jpg);
+            
+            height: 250px;
+            padding: 70px;
+            padding-inline-start: 200px;
+            padding-inline-end: 200px;
+        }
+        .sixth{
+            height: 250px;
+            background-color: rgba(234, 228, 45, 0.651);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            
+            padding-top: 80px;
+            
+        }
+        .sixth ul li a{
+            border: 2px solid rgb(255, 254, 254);
+            border-radius: 25px;
+            color: rgb(255, 255, 255);
+            padding: 10px 50px;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            top: 40px;  
+            
+        }
+
+        .sixth li{
+            list-style-type:none;
+            display: inline; 
+            
+        }
+
+        .sixth p{
+            position: relative;
+            top: 10px;
+        }
+
+        .sixth ul li a:hover{
+            background-color:rgb(195, 76, 110) ;
+            color: rgb(255, 255, 255);
+            transition: 0.4s ease-in-out;
+            border-color: rgb(195, 76, 110);
+        }
+
+        .seventh{
+            padding: 30px;
+            height: 600px;
+            background-color: rgba(212, 195, 195, 0.708);  
+            padding-left: 80px;
+            text-align: center;
+            color: rgb(136, 20, 20);
+            text-shadow: 1px 1px 0px rgb(100, 99, 99);
+        }
+
+        .seventh video{
+            height: 400px;
+            width: auto;
+            border-radius: 20px;
+        }
+
+        .seventh2{
+            padding: 30px;
+            height: 600px;
+            background-color: rgba(255, 255, 255, 0.708);  
+            padding-left: 80px;
+            text-align: center;
+            color: rgb(136, 20, 20);
+            text-shadow: 1px 1px 0px rgb(100, 99, 99);
+        }
+
+        .seventh2 video{
+            height: 400px;
+            width: auto;
+            border-radius: 20px;
+            
+        }
+
+        .seventh3{
+            padding: 30px;
+            height: 600px;
+            background-color: rgba(212, 195, 195, 0.708);  
+            padding-left: 80px;
+            text-align: center;
+            color: rgb(136, 20, 20);
+            text-shadow: 1px 1px 0px rgb(100, 99, 99);
+        }
+
+        .seventh3 video{
+            height: 400px;
+            width: auto;
+            border-radius: 20px;
+        }
+
+        .seventh4{
+            padding: 30px;
+            height: 600px;
+            background-color: rgba(255, 255, 255, 0.708);  
+            padding-left: 80px;
+            text-align: center;
+            color: rgb(136, 20, 20);
+            text-shadow: 1px 1px 0px rgb(100, 99, 99);
+        }
+
+        .seventh4 video{
+            height: 400px;
+            width: auto;
+            border-radius: 20px;
+        }
+         
+         .eight{
+            height: 250px;
+            background-color: rgba(84, 24, 92, 0.968);
+            color: rgb(252, 231, 2);
+            text-align: center;
+            width: 100%;
+            padding-top: 80px;
+        }
+        .eight ul li a{
+            border: 1px solid rgb(242, 255, 0);
+            border-radius: 25px;
+            color: rgb(255, 251, 0);
+            padding: 10px 50px;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+            top: 40px;
+            
+        }
+
+        .eight p{
+            position: relative;
+            top: 10px;
+        }
+
+        .eight ul li a:hover{
+            background-color:rgb(255, 234, 0) ;
+            color: rgb(0, 0, 0);
+            transition: 0.4s ease-in-out;
+            border-color: rgb(255, 234, 0);
+        }
+
+        .nine{
+            background-color: rgb(33, 10, 54);
+            padding-inline: 150px;
+            height: 160px;
+        }
+        
+        .nine img{
+            height: 100px;
+            width: auto;
+        }
+        .nine ul{
+            float:right;
+            /* padding-right: 250px; */
+            position: relative;
+            bottom: 65px;
+        }
+        .nine ul li a:hover{
+            color: rgb(255, 251, 0);
+        }
+
+
+        .nine ul li{
+            list-style-type: none;  
+            display:inline-block;
+            padding-right: 30px;
+
+        }
+
+        .nine ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+
+
+        .nine ol{
+            float:right;
+            padding-left: 150px;
+            position: relative;
+            bottom: 5px;
+            left: 105px;
+        }
+        .nine ol li img:hover{
+            transform: scale(1.1);
+        }
+
+
+        .nine ol li{
+            list-style-type: none;  
+            display:inline-block;
+            padding-right: 30px;
+
+        }
+
+        .nine ol li img{
+            height: 32px;
+            width: auto;
+            border-radius: 50px;
+        }
+
+       
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   </head>
+<body>
+    <header>
+        
+        
+        <div class="nav">
+            <div class="logo">
+                <img src="cascadelogo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="file:///D:/CSS/web%20project/home.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="file:///D:/CSS/web%20project/interior.html">Interior</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="file:///D:/CSS/web%20project/login.html#">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>A Home So Good You Will <br> Love To Live</h1> <br>
+            <p>India's most trusted Home Interior brand</p>
+            <ul>
+                <li><a href="#">Book Consultation</a></li>
+            </ul>
+        </div>
+       
+    
+</header>
+
+<div class="inter">
+    <center><img src="x.jpg" alt=""> <img src="y.jpg" alt=""> <img src="z.jpg" alt=""></center><br>
+    
+    <center><p>Easy EMIs</p> <p>45 day move-in guarantee</p> <p>Flat 10-year warranty</p></center>
+</div>
+
+
+<div class="second">
+<center><h1>Superior technology for superior cabinets</h1></center>
+<center><img src="m.jpg" alt=""> <img src="n.jpg" alt=""> <img src="o.jpg" alt=""></center><br>
+    
+    <center><p>Advanced connector mechanism for sturdy build.</p> <p>Ensures the panels are smooth and bubble-free</p> <p>Prevents moisture from entering the core</p></center>
+
+
+</div>
+
+<div class="third">
+    <h1>Design Your Home Instantly</h1>
+    <p>When you give your home the Livspace touch, you get both beauty and functionality. <br> We employ state-of-the-art technology to ensure your home features a flawless look that <br> lasts a very long time.</p>
+    <ul>
+        <li><a href="#">Book Free Consultation</a></li>
+    </ul>
+</div>
+
+<div class="fourth">
+    <center><h1>A Little Preview Of CasCade Homes</h1> <br>
+    <p>Take a tour of the homes we’ve designed for our customers</p></center>
+    <center><img src="aa.jpg" alt=""> <img src="bb.jpg" alt=""> <img src="cc.jpg" alt=""></center>
+    <center><p>Monochromatic beige 2BHK </p> <p>Elegant & Royal 3BHK</p> <p>Modern & Classy 4BHK</p> </center>
+</div>
+
+<div class="fifth">
+
+</div>
+
+<div class="sixth">
+    <h1>Connect With Us</h1> <br>
+    <h3>Reach out on WhatsApp or give us a call for the best home design experience.</h3>
+    <ul>
+        <li><a href="#"><i class="fa-solid fa-phone"></i>  CALL US</a></li>
+        <li><a href="#"><i class="fa-brands fa-whatsapp"></i>  JOIN WHATSAPP</a></li>
+    </ul>
+</div>
+
+<div class="seventh">
+    <h1>Tested To Be The Best</h1> <br>
+    <p>A lot of our success in modular strength hinges on testing our cabinets.</p> <br>
+    <video src="drawer.mp4" loop muted autoplay="autoplay"></video><br><br>
+    <h2>Drawer Cyclic Test</h2><br>
+    <h4>Ensures extended life for your cabinet drawers.</h4>    
+</div>
+
+<div class="seventh2">
+    <h1>Tested To Be The Best</h1> <br>
+    <p>A lot of our success in modular strength hinges on testing our cabinets.</p> <br>
+    <video src="Shutter.mp4" loop muted autoplay="autoplay"></video><br><br>
+    <h2>Shutter Cyclic Test</h2><br>
+    <h4>Ensures long life for your shutters.</h4>    
+</div>
+
+<div class="seventh3">
+    <h1>Tested To Be The Best</h1> <br>
+    <p>A lot of our success in modular strength hinges on testing our cabinets.</p> <br>
+    <video src="load.mp4" loop muted autoplay="autoplay"></video><br><br>
+    <h2>Shelf Load Test</h2><br>
+    <h4>Ensures shelves don't break under considerable load.</h4>    
+</div>
+
+<div class="seventh4">
+    <h1>Tested To Be The Best</h1> <br>
+    <p>A lot of our success in modular strength hinges on testing our cabinets.</p> <br>
+    <video src="force.mp4" loop muted autoplay="autoplay"></video><br><br>
+    <h2>Vertical Force Test</h2><br>
+    <h4>Ensures superior hinge quality and avoids accidents.</h4>    
+</div>
+
+<div class="eight">
+    <h1>Your Dream House Is Just A Click Away</h1> <br>
+    <p style="color: white;">Book a free consultaion with our designers</p> <br>
+    <ul><li><a href="#">BOOK HERE</a></li></ul>
+</div>
+
+<div class="nine" id="a">
+    <div class="lo"><img src="cascadelogo.png" alt=""></div>
+    <ul>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Guide</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Our story</a></li>
+        </ul>
+
+      <ol>
+        <li><img src="l1.jpg" alt=""></li>
+        <li><img src="l2.jpg" alt=""></li>
+        <li><img src="l3.jpg" alt=""></li>
+        <li><img src="l4.jpg" alt=""></li>
+        <li><img src="l5.jpg" alt=""></li>
+      </ol>  
+</div>
+</body>
+</html>

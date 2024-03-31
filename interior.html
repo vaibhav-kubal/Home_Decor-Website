@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interiors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header{
+            height: 80px;
+            background-color: rgb(59, 5, 97);
+            
+        }
+
+        .nav ul{
+            float: right;
+            list-style-type: none;
+            
+        }
+
+        .nav ul li{
+            display: inline-block;
+            margin-top: 35px;
+            margin-right: 3px;
+        }
+
+        .nav ul li a{
+            text-decoration: none;
+            padding: 2px 5px;
+            color: white;
+            border: 0.5px solid transparent;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .nav ul li a:hover{
+            color:  rgb(255, 241, 136);
+        }
+        .nav ul li a::after{
+           content: '';
+           height: 2.5px;
+           width: 0;
+           background-color: rgb(255, 241, 136);
+           position: absolute;
+           left: 0px;
+           bottom: -10px;
+           transition: 0.4s;
+        }
+
+    .nav ul li a:hover::after{
+        width:100%;
+    }
+    .logo img{
+            width: 280px;
+            height: auto;
+            float: left;
+            border-radius: 10px;
+            margin-left: 35px;
+            margin-top: 0px;
+        }
+        .nav{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .head{
+            padding-top: 35px;
+            height: 120px;
+            padding-inline: 100px;
+        }
+        .head h1{
+            padding: 10px;
+            width: 400px;
+            padding-left: 50px;
+            
+        }
+        .head h4{
+            padding-left: 52px;
+        }
+
+        .table{
+            display: flex;
+            padding-left: 11%;
+        }
+        .table table{
+            height: 250px;
+            width: 350px;
+            margin-inline: 20px;
+        }
+
+        .table table img{
+            height: 250px;
+            width: 350px;
+            border-radius: 20px;
+        }
+
+        .consult{
+            padding-inline: 320px;
+            background-color: rgb(252, 246, 246);
+        }
+
+        .consult img{
+            height: 500px;
+            width: auto;
+           
+        }
+
+        .table2{
+            display: flex;
+          padding-inline-start: 100px;
+        }
+        .table2 table{
+            height: 300px;
+            width: 330px;
+        }
+
+        .table2 table img{
+            height: 200px;
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        #a1{
+            background-color: rgb(239, 251, 255);
+        }
+
+        #a2{
+            background-color: rgb(239, 251, 255);
+        }
+
+        .info h2{
+            padding-top: 20px;
+            margin-left: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .info h5{
+            font-size: small;
+            color: grey;
+            padding-left: 100px;
+            padding-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bar img{
+            padding-top: 30px;
+            height: 170px;
+            width: auto;
+            padding-left: 30px;
+        }
+
+        .gg{
+            background-color: rgb(230, 230, 230);
+        }
+        .gg .table3{
+            display: flex;
+            padding-left:95px ;
+            
+        }
+
+        
+        .gg table{
+            height: 250px;
+            width: 350px;
+            padding-top: 30px;
+            padding-inline: 70px;
+            padding-bottom: 20px;
+        }
+
+        .gg table img{
+            height: 200px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .gg h1{
+            width: 500px;
+            text-align: center;
+            padding-left: 520px;
+            padding-top: 30px;
+            color: rgb(41, 41, 130);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 38px;
+        }
+
+        .l2 img{
+            height: 80px;
+            width: auto;
+        }
+
+        .l2{
+            padding-inline: 50px;
+            height: 180px;
+            padding-top: 8px;
+        }
+        .l2 p{
+            text-align: justify;
+            color: rgb(165, 164, 164);
+            font-size: 12.5px;
+        }
+
+        .nine{
+            background-color: rgb(33, 10, 54);
+            padding-inline: 150px;
+            height: 160px;
+        }
+        
+        .nine img{
+            height: 100px;
+            width: auto;
+        }
+        .nine ul{
+            float:right;
+            /* padding-right: 250px; */
+            position: relative;
+            bottom: 65px;
+        }
+        .nine ul li a:hover{
+            color: rgb(255, 251, 0);
+        }
+
+
+        .nine ul li{
+            list-style-type: none;  
+            display:inline-block;
+            padding-right: 30px;
+
+        }
+
+        .nine ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .nine ol{
+            float:right;
+            padding-left: 150px;
+            position: relative;
+            bottom: 5px;
+            left: 105px;
+        }
+        .nine ol li img:hover{
+            transform: scale(1.1);
+        }
+
+
+        .nine ol li{
+            list-style-type: none;  
+            display:inline-block;
+            padding-right: 30px;
+
+        }
+
+        .nine ol li img{
+            height: 32px;
+            width: auto;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="nav">
+            <div class="logo">
+                <img src="cascadelogo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="file:///D:/CSS/web%20project/home.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="file:///D:/CSS/web%20project/Designs.html">Designs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="file:///D:/CSS/web%20project/login.html">Login</a></li>
+            </ul>
+        </div>
+        </header>
+
+        <div class="gallery">
+            <div class="head">
+                <h1>Design Gallery</h1>
+                <h4>Explore inspirational designs for every room to transform your home to a dream home.</h4>
+            </div>
+
+            <div class="table">
+                <table>
+                    <th><img src="d1.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="d4.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="d2.jpg" alt=""></th>
+                </table>
+            </div>
+        </div> <br><br>
+
+            <div class="table">
+                <table>
+                    <th><img src="d3.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="d5.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="d7.jpg" alt=""></th>
+                </table>
+            </div><br><br>
+
+
+        <div class="consult">
+            <img src="consult.jpg" alt="">
+        </div><br><br>
+
+        <div class="extra">
+            <div class="info">
+                <h2>Modular Kitchen Designs</h2>
+                <h5>As the centre of your home, the kitchen radiates warmth and care. Our interior design team works with your vision, your lifestyle, and your budget to create modular kitchens that you will love!</h5>
+            </div>
+        
+            <div class="table2">
+                <table>
+                    <th><img src="k2.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="k3.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="k4.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="k5.jpg" alt=""></th>
+                </table>
+            </div>
+        </div>
+
+        <div class="extra" id="a1">
+            <div class="info">
+                <h2>Wardrobe Designs</h2>
+                <h5>As functional as they are aesthetic, our sleek and stylish wardrobe designs are ideal to make the best use of every inch of storage space. We transform good interior design ideas into great spaces that work!</h5>
+            </div>
+        
+            <div class="table2">
+                <table>
+                    <th><img src="w1.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="w2.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="w6.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="w4.jpg" alt=""></th>
+                </table>
+            </div>
+        </div>
+
+        <div class="bar">
+            <img src="infobar.jpg" alt="">
+        </div>
+
+        <div class="info">
+            <h2>Home Design Products</h2>
+                <h5>We bring you creative home design products that work together beautifully to form inspired living spaces. Get thoughtful home interior design elements that add real and lasting value to your interiors!</h5>
+        </div>
+        <br><br><br>
+
+        <div class="extra" id="a2">
+            <div class="info">
+                <h2>Space Saving Furniture</h2>
+                <h5>Make the most of compact spaces with space saving furniture that are ingenuous and innovative. Transform your living spaces with interior designs that make optimal use of available space.</h5>
+            </div>
+        
+            <div class="table2">
+                <table>
+                    <th><img src="sp1.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="sp2.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="sp3.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="sp4.jpg" alt=""></th>
+                </table>
+            </div>
+        </div>
+
+        <div class="gg">
+            <div class="gghead">
+                <h1>Complete Home Interiors In 6 Easy Steps</h1>
+            </div><br><br>
+
+            <div class="table3">
+                <table>
+                    <th><img src="gg11.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="gg2.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="gg3.jpg" alt=""></th>
+                </table>
+            </div>
+        </div>
+
+        <div class="gg">
+
+            <div class="table3">
+                <table>
+                    <th><img src="gg4.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="gg5.jpg" alt=""></th>
+                </table>
+                <table>
+                    <th><img src="gg6.jpg" alt=""></th>
+                </table>
+            </div>
+        </div>
+
+        <div class="l2">
+            <img src="cascadelogo2.png" alt="">
+            <p>At CasCade, we bring together functionality and aesthetics to provide homeowners with customised and efficient home designs. Our designers specialise in home interior designs and home décor, and help you create a personalized home to suit your lifestyle. From sophisticated living room designs to space-saving and clutter-free interior designs, we are here to help you find the best home decor and home design to match your needs and style. All our products come with up to 10-year warranty along with unwavering support and maintenance services. Explore thousands of inspiring interior designs or get a free estimate – it's all here on CasCade.com, your one stop for complete home interiors.</p>
+        </div>
+
+        <div class="nine" id="a">
+            <div class="lo"><img src="cascadelogo.png" alt=""></div>
+            <ul>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Guide</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our story</a></li>
+                </ul>
+        
+              <ol>
+                <li><img src="l1.jpg" alt=""></li>
+                <li><img src="l2.jpg" alt=""></li>
+                <li><img src="l3.jpg" alt=""></li>
+                <li><img src="l4.jpg" alt=""></li>
+                <li><img src="l5.jpg" alt=""></li>
+              </ol>  
+</body>
+</html>
